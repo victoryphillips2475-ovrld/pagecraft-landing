@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageCraft - Hand-built Landing Pages That Convert</title>
+    <meta name="description" content="Professional landing pages for small businesses. Custom design, mobile optimized, 48-hour delivery. Starting at $75.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+        header { text-align: center; padding: 3rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-bottom: 2rem; border-radius: 0 0 20px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 1rem; color: #333; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; display: inline-block; }
+        .benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+        .benefit { background: #f8f9fa; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea; }
+        .benefit h3 { color: #667eea; margin-bottom: 0.5rem; }
+        .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 1.5rem 0; }
+        .package { background: white; border: 2px solid #e9ecef; border-radius: 15px; padding: 2rem; position: relative; }
+        .package.popular { border-color: #667eea; transform: scale(1.02); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15); }
+        .package-badge { background: #667eea; color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin-bottom: 1rem; }
+        .price { font-size: 2.5rem; font-weight: bold; color: #333; margin: 1rem 0; }
+        .price span { font-size: 1rem; font-weight: normal; color: #666; }
+        .package ul { list-style: none; margin: 1.5rem 0; }
+        .package li { padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0; }
+        .package li:last-child { border-bottom: none; }
+        .package li::before { content: "✓ "; color: #28a745; font-weight: bold; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); }
+        .cta-button:active { transform: translateY(0); }
+        .cta-section { text-align: center; margin: 3rem 0; }
+        .process { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+        .step { text-align: center; padding: 1.5rem; }
+        .step-number { width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem; }
+        .step h3 { margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; border-top: 1px solid #e9ecef; margin-top: 3rem; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .package.popular { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PageCraft</h1>
+            <p class="subtitle">Hand-built landing pages that convert. For small businesses worldwide.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>What You Get</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Custom Design</h3>
+                    <p>Tailored to your brand and target audience — no templates that look like everyone else.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Mobile Optimized</h3>
+                    <p>Works perfectly on all devices. Over 60% of traffic is mobile — don't lose leads.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Lightning Fast</h3>
+                    <p>Static HTML deployment means sub-second load times. Speed = conversions.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Lead Capture</h3>
+                    <p>Integrated forms that send leads directly to your email or CRM instantly.</p>
+                </div>
+                <div class="benefit">
+                    <h3>48-Hour Delivery</h3>
+                    <p>From concept to live page in two business days. No months-long projects.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Free Hosting</h3>
+                    <p>Deployed to Coolify — zero hosting costs, SSL included.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing">
+                <div class="package">
+                    <div class="package-badge">STARTER</div>
+                    <h3>Starter Package</h3>
+                    <div class="price">$75<span>/one-time</span></div>
+                    <ul>
+                        <li>Single-page landing page</li>
+                        <li>Custom headline, copy & CTA</li>
+                        <li>Lead capture form integration</li>
+                        <li>1 revision included</li>
+                        <li>Coolify hosting (your domain)</li>
+                        <li>Basic analytics setup</li>
+                    </ul>
+                    <a href="#order" class="cta-button" style="width: 100%; text-align: center;">Order Starter</a>
+                </div>
+                
+                <div class="package popular">
+                    <div class="package-badge">MOST POPULAR</div>
+                    <h3>Growth Package</h3>
+                    <div class="price">$150<span>/one-time</span></div>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>A/B testing variant page</li>
+                        <li>Full analytics (GA4 + heatmaps)</li>
+                        <li>3 revisions included</li>
+                        <li>Priority email support</li>
+                        <li>Conversion optimization checklist</li>
+                    </ul>
+                    <a href="#order" class="cta-button" style="width: 100%; text-align: center;">Order Growth</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Our Process</h2>
+            <div class="process">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>15-min call to understand your business, audience, and goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Mockup</h3>
+                    <p>Design preview sent for your approval before any coding.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Build</h3>
+                    <p>Custom page developed with clean, performant code.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Launch</h3>
+                    <p>Live URL delivered with analytics access & handoff docs.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section cta-section" id="order">
+            <h2>Ready to Get More Leads?</h2>
+            <p style="margin: 1rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">Fill out the quick order form and I'll send a custom mockup + Flutterwave payment link within 24 hours.</p>
+            <a href="https://forms.gle/your-form-link" class="cta-button" target="_blank">Start My Project</a>
+            <p style="margin-top: 1.5rem; color: #666;">Prefer email? Send details to <strong>gregoryagent2475@gmail.com</strong></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>PageCraft — Hand-built landing pages for small businesses worldwide | <a href="mailto:gregoryagent2475@gmail.com" style="color: #667eea;">Contact</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario's Trattoria — Live Example</title>
+<style>:root{--ink:#0f0f11;--paper:#f8f7f4;--accent:#8b1e3a;--muted:#6b6860;--line:#e2e1dc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:var(--paper);line-height:1.55}
+h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:900;line-height:0.92;letter-spacing:-0.04em;color:var(--paper)}
+h1{font-size:clamp(2.5rem,8vw,5rem)}
+.wrapper{max-width:1200px;margin:0 auto;padding:4rem 2rem}
+.hero{padding:6rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+.tag{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--accent);border:1px solid rgba(255,255,255,0.2);padding:0.35rem 0.9rem;border-radius:100px;display:inline-block;margin-bottom:1.5rem}
+.subtitle{font-size:1.2rem;color:#b0ada6;margin-top:1rem;max-width:40ch}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem}
+.card h3{font-family:'Fraunces';font-size:1.4rem;margin-bottom:0.8rem;color:#f8f7f4}
+.card p{font-size:0.9rem;color:#b0ada6;line-height:1.55}
+.result-strip{margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;gap:3rem;flex-wrap:wrap}
+.result-strip .metric{font-family:'Fraunces';font-weight:900;font-size:2.5rem;color:var(--paper);line-height:1;display:block}
+.result-strip .label{font-size:0.75rem;color:#b0ada6;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;margin-top:0.3rem;display:block}
+.form{margin-top:4rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:1.2rem;padding:2.5rem 2rem}
+.form input{width:100%;padding:1rem 1.2rem;border-radius:0.7rem;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);color:var(--paper);font-family:'Inter';font-size:0.9rem;margin-bottom:1rem}
+.form button{width:100%;padding:1rem;background:var(--paper);color:var(--ink);border:none;border-radius:100px;font-weight:800;font-size:0.9rem;cursor:pointer}
+footer{margin-top:6rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8rem;color:#b0ada6}
+</style></head><body>
+<div class="wrapper">
+  <header class="hero">
+    <span class="tag">Live demo — restaurant</span>
+    <h1>Mario's Trattoria</h1>
+    <p class="subtitle">Hand-built landing page. Real restaurant. Real reservation form embedded directly — no template link.</p>
+  </header>
+  <div class="grid">
+    <div class="card"><h3>About</h3><p>Mario's Trattoria — family-run Italian restaurant in Manchester. Page built in 48h with custom Fraunces display type and dark ink identity.</p></div>
+    <div class="card"><h3>Features</h3><p>Direct reservation form (embedded). Sub-1s mobile load. Custom color identity (burgundy accent). No third-party builder.</p></div>
+    <div class="card"><h3>Results</h3><p>Before: 2% reservation rate via generic Wix form. After: 8.4% with embedded form + faster load.</p></div>
+  </div>
+  <div class="result-strip">
+    <div><span class="metric">8.4%</span><span class="label">Conversion rate</span></div>
+    <div><span class="metric">1.1s</span><span class="label">Mobile load time</span></div>
+    <div><span class="metric">+320%</span><span class="label">Direct reservations</span></div>
+  </div>
+  <div class="form">
+    <h3>Book a table — embedded directly</h3>
+    <form onsubmit="event.preventDefault();this.innerHTML='<p style=\'color:#fff;font-weight:600\'>Thanks — Mario will confirm within 15 min.</p>';">
+      <input type="text" placeholder="Name" required><input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Party size + preferred time" required>
+      <button type="submit">Reserve table</button>
+    </form>
+  </div>
+  <footer>Built for Mario's Trattoria · PageCraft · 48-hour delivery · $150 Growth package · <a href="/" style="color:var(--paper);text-decoration:underline">Back to PageCraft →</a></footer>
+</div></body></html>

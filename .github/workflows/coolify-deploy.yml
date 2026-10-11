@@ -1,0 +1,15 @@
+name: Coolify Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: [self-hosted, coolify-deploy]
+    steps:
+      - name: Trigger Coolify Deploy
+        env:
+          COOLIFY_API_KEY: 1|AG3JZ725S35mG9HmREsF6E5zRzCvtxrZIPqLApK76e53863
+        run: |
+          curl -sk -X POST 
+            -H "Authorization: Bearer $COOLIFY_API_KEY" 
+            "https://ip-172-31-17-202-1.tail4f3968.ts.net:8443/api/v1/applications/sr6f3eidictjogdsw6hvwmi1/deploy"
